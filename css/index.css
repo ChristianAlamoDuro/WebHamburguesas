@@ -1,0 +1,83 @@
+
+
+/************* GENERAL *************/
+* {
+    font-family: 'Poor Story', cursive;
+    font-size: 1.2rem;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.texto-naranja{
+    color: #ffba4e;
+}
+.hr-menu{
+    background-color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.navbar-color {
+    background-color: #ffba4e;
+}
+
+.navbar-toggler {
+    background-color: #007bff;
+    color: #FFFFFF;
+}
+
+.centrado-horizontal{
+    position: absolute;
+    left: 50%;
+}
+/************* FIN GENERAL *************/
+
+/************* HEADER *************/
+/*
+    Img-inicio
+ */
+.imagen-inicio {
+    background-image: url("../img/1.jpg");
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+    Menu diario
+ */
+.bg-menu{
+    background-color: rgba(123,57,16,0.5);
+}
+.navbar-color-2{
+    background-color: rgb(25,97,27);
+}
+.navbar-color-3{
+    background-color: rgb(150,36,52);
+}
+.navbar-color-4{
+    background-color: rgba(97,41,21,0.8);
+}
+.activo{
+    background-color: #93196b;
+}
+.activo:focus{
+    background-color: #93196b;
+}
+
+/*
+    Contacta con nosotros
+ */
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+/************* FIN HEADER *************/

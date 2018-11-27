@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--LETRAS-->
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Scripts Propios-->
+    <script defer src="js/cambio-html.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <title>Proyecto bar</title>
+</head>
+<body>
+<!--MENU DE INICIO-->
+<nav class="navbar navbar-expand-lg navbar-color">
+    <a class="navbar-brand" href="#"><img src="img/hamburguesa.png" alt="" width="15%"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu Diario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#servicios">Nuestros Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacta">Contacta con nosotros</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!--FIN DE MENU DE INICIO-->
+
+<!--HEADER-->
+
+<!--Img-inicio-->
+<div class="container-fluid ">
+    <div class="row ">
+        <div class="col-12 reset">
+            <div class="imagen-inicio">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Menu Diario-->
+<div class="container-fluid" id="menu">
+    <div class="row">
+        <div class="col-12 p-5 navbar-color-2 dentro">
+            <h3 class="texto-centrado">MENU DEL DIA</h3>
+            <div class="texto-centrado">
+                <button class="btn btn-primary mb-1" id="Lunes" onclick="cambiar_menu('Lunes')">Lunes</button>
+                <button class="btn btn-primary mb-1" id="Martes" onclick="cambiar_menu('Martes')">Martes</button>
+                <button class="btn btn-primary mb-1" id="Miércoles" onclick="cambiar_menu('Miércoles')">Miércoles</button>
+                <button class="btn btn-primary mb-1" id="Jueves" onclick="cambiar_menu('Jueves')">Jueves</button>
+                <button class="btn btn-primary mb-1" id="Viernes" onclick="cambiar_menu('Viernes')">Viernes</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bg-menu">
+            <div class="texto-centrado">
+                <h2 id="dia"></h2>
+                <hr>
+                <h4>Entrantes</h4>
+                <hr class="ml-auto mr-auto hr-menu">
+                <div class="mb-4 texto-naranja" id="entrante-dia">
+                </div>
+                <h4>Hamburguesas</h4>
+                <hr class="ml-auto mr-auto hr-menu">
+                <div class="texto-naranja mb-4" id="hamburguesa-dia">
+                </div>
+                <h4>Postres</h4>
+                <hr class="ml-auto mr-auto hr-menu">
+                <div class="texto-naranja mb-4" id="postre-dia">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 reset">
+            <img src="" alt="" class="img-fluid" id="img-menu">
+        </div>
+    </div>
+</div>
+
+<!--Nuestros Servicios-->
+<div class="container-fluid"id="servicios" >
+    <div class="row">
+        <div class="col-12 p-5 navbar-color-3 dentro">
+            <h3 class="texto-centrado">Nuestros Servicios</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 reset">
+            <div class="texto-centrado desaparece-movil">
+                <img src="img/repartidor.jpg" alt="" class="img-fluid" id="img-repartidor">
+            </div>
+        </div>
+        <div class="col-md-6 bg-menu texto-centrado">
+            <h3 class="m-4 texto-naranja">Horario</h3>
+            <hr>
+            <h4 class="m-1">Todos los dias:</h4><p>12:00-17:00 20:00-0:30</p>
+            <h3 class="m-4 texto-naranja">Entrega a domicilio</h3>
+            <hr>
+            <p class="m-1">
+                Entrega gratuita en pedidos de mas de 12 €. <br>
+                Pedidos inferiores a 12 € se cobrará 2€
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--Contacta con nostros-->
+<div class="container-fluid" id="contacta">
+    <div class="row">
+        <div class="col-12 p-5 navbar-color-4 dentro">
+            <h3 class="texto-centrado">Contacta con nosotros</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 mb-2">
+            <div class="row justify-content-center">
+                <div class="col-6 my-5">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="email">Emal:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre-reserva">Nombre de la reserva:</label>
+                            <input type="text" class="form-control" id="nombre-reserva">
+                        </div>
+                        <div class="form-group">
+                            <label for="dia-reserva">Día de reserva:</label>
+                            <input type="date" class="form-control" id="dia-reserva">
+                        </div>
+                        <div class="form-group">
+                            <label for="hora-reserva">Hora de reserva:</label>
+                            <input type="time" class="form-control" id="hora-reserva">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 reset desaparece-movil">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38441032713!2d-3.819619633235523!3d40.438131079723014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1542218735850"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!--FIN HEADER-->
+<!--PIE DE PAGINA-->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark navbar-color pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://twitter.com/chrisatm13?lang=es" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/christian-%C3%A1lamo-duro-408268171/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://www.linkedin.com/in/christian-%C3%A1lamo-duro-408268171/" target="_blank"> Christian Álamo Duro</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!--BOOTSTRAP JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
